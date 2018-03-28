@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v4.view.ViewPager
+    android:id="@+id/mViewPager"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="0dp">
+
+</android.support.v4.view.ViewPager>
+
+ <!--下部的图标点击需要两张图片切换，字体的颜色也会切换-->
+<RadioGroup
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/rbtn1"
+        android:text="首页"
+        android:checked="true"
+        android:gravity="center"
+        android:textColor="@color/home_text_selector"
+        android:drawableTop="@drawable/rb_home"
+        android:drawablePadding="3dp"
+        android:button="@null"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:id="@+id/rbtn2"
+        android:text="收藏"
+        android:button="@null"
+        android:textColor="@color/home_text_selector"
+        android:drawableTop="@drawable/rb_rim"
+        android:gravity="center"
+        android:drawablePadding="3dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/home_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#696969"
+            android:layout_marginTop="3dp"
+            android:text="发布信息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/rbtn3"
+        android:text="消息"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:button="@null"
+        android:textColor="@color/home_text_selector"
+        android:drawableTop="@drawable/rb_message"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:id="@+id/rbtn4"
+        android:text="个人中心"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:button="@null"
+        android:textColor="@color/home_text_selector"
+        android:drawableTop="@drawable/rb_myself"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</RadioGroup>
+</LinearLayout>

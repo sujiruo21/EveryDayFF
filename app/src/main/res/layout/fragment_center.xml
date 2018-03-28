@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/root_bg_color"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_login_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/top_bg_color"
+            android:drawableLeft="@drawable/center_default_head"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:text="登录/注册"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/user_logined_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/top_bg_color"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <com.zl.everydayff.ui.RoundImageView
+                android:id="@+id/user_head_iv"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/center_default_head" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="曾辉"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/user_location_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="湖南省长沙市"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_code" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未签到" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="我的任务"
+                    android:textSize="@dimen/default_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未签到" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="我的任务"
+                    android:textSize="@dimen/default_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未签到" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="我的任务"
+                    android:textSize="@dimen/default_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/purchase_records"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="购买记录" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/my_order"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="我的订单" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/my_publish"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="我的发布" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/worker_manage_center"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="工人管理中心" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/team_manage_center"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="团队管理中心" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/expert_manage_center"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="技术管理中心" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/common_problem"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="常见问题" />
+
+        <TextView
+            android:id="@+id/user_exit_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawableLeft="@drawable/common_problem"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="常见问题" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/common_problem"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="常见问题" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/common_problem"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="常见问题" />
+
+    </LinearLayout>
+
+</ScrollView>

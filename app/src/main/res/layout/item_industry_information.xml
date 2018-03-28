@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    style="@style/width_match_height_wrap">
+    <TextView
+        android:id="@+id/news_text"
+        style="@style/height_wrap_width_weight"
+        android:textSize="@dimen/default_text_size"
+        android:text="text" />
+    <TextView
+        android:id="@+id/news_date"
+        style="@style/wrap_content"
+        android:text="text"
+        android:textSize="10sp"
+        android:textColor="@color/defualt_text_color" />
+</LinearLayout>
